@@ -11,3 +11,9 @@ class TestTask(unittest.TestCase):
     
     def test_task_has_description(self):
         self.assertEqual("wash dishes", self.wash_dishes.description)
+    
+    def test_task_has_duration(self):
+        self.assertEqual(45, self.cook_dinner.duration)
+
+    def test_task_has_preferred_over(self):
+        self.assertEqual("wash dishes", self.clean_windows.preferred_over)
